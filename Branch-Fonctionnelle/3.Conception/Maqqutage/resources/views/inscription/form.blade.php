@@ -118,7 +118,7 @@
 
                         </div>  
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="{{ route('test') }}" type="submit" class="btn btn-primary">Suivant</a>
                         </div>
                     </form>
                 </div>
