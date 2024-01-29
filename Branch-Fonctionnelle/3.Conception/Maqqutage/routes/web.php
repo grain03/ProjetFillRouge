@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/inscription', function () {
     return view('inscription.form');
 })->name('inscription');
+
+Route::get('/test', function () {
+    return view('inscription.test');
+})->name('test');
