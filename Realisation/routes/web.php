@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InscriptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,8 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/inscription', function () {
-    return view('inscription.form');
-})->name('inscription');
+Route::get('/inscription', [InscriptionController::class, 'index'])->name('inscription');
+Route::post('/store', [InscriptionController::class, 'create'])->name('store');
 
 Route::get('/test', function () {
     return view('inscription.test');
